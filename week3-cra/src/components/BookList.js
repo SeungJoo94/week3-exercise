@@ -2,6 +2,12 @@ import React from "react";
 
 const BookList = (props) => {
   const [isChecked, setIsChecked] = React.useState(false); //checkbox 상태 변화 관리
+
+  //가격에 컴마찍기
+  const bookPrice = props.bookItem.price
+    .toString()
+    .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+
   //radio, checkbox 상태 관리하는 함수 따로
   function radiotest(e) {
     console.log(props);
@@ -36,7 +42,7 @@ const BookList = (props) => {
         value={props.bookItem.price}
       />
       <label htmlFor={props.bookItem.id}>
-        {props.bookItem.title}: {props.bookItem.price}원
+        {props.bookItem.title}: {bookPrice}원
       </label>
     </li>
   );

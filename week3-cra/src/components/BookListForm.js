@@ -33,6 +33,15 @@ const BookListForm = () => {
     }
     alert("수강신청이 완료되었습니다!");
   }
+
+  //천자리에 콤마찍기
+  const TotalPrice = price + price2;
+
+  const TotalPrice2 = TotalPrice.toString().replace(
+    /\B(?=(\d{3})+(?!\d))/g,
+    ","
+  );
+
   return (
     <form onSubmit={onSubmitForm}>
       <ul>
@@ -65,7 +74,7 @@ const BookListForm = () => {
         />
       </ul>
       <p>{noticeMessage}</p>
-      <p>총 강의 금액: {`${price + price2}`}원</p>
+      <p>총 강의 금액: {TotalPrice2}원</p>
       <button>수강신청</button>
     </form>
   );

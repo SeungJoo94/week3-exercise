@@ -5,7 +5,7 @@ import SomunList from "./SomunList";
 
 const SomunEvent = () => {
   React.useEffect(() => {
-    fetch("./event-list.json")
+    fetch("../../public/event-list.json")
       .then((res) => res.json())
       .then((data) => {
         setList(data);
