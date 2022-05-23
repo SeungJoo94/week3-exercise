@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/week3-exercise/static/css/main.6e621850.css",
-    "main.js": "/week3-exercise/static/js/main.e6f48c93.js",
+    "main.js": "/week3-exercise/static/js/main.80838e16.js",
     "static/js/787.f7d93b35.chunk.js": "/week3-exercise/static/js/787.f7d93b35.chunk.js",
     "index.html": "/week3-exercise/index.html",
     "main.6e621850.css.map": "/week3-exercise/static/css/main.6e621850.css.map",
-    "main.e6f48c93.js.map": "/week3-exercise/static/js/main.e6f48c93.js.map",
+    "main.80838e16.js.map": "/week3-exercise/static/js/main.80838e16.js.map",
     "787.f7d93b35.chunk.js.map": "/week3-exercise/static/js/787.f7d93b35.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6e621850.css",
-    "static/js/main.e6f48c93.js"
+    "static/js/main.80838e16.js"
   ]
 }
